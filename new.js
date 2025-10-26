@@ -2226,7 +2226,7 @@ const lunarBiz = {
           if (this._manualInputHandler) {
             this.input.removeEventListener('blur', this._manualInputHandler);
           }
-          this._manualInputHandler = () => this.syncFromInputValue();
+          this._manualInputHandler = () => this.syncFromInputValue(false);
           this.input.addEventListener('blur', this._manualInputHandler);
 
           if (this._manualKeydownHandler) {
