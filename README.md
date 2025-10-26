@@ -1,5 +1,7 @@
 # SubsTracker - 订阅管理与提醒系统
 
+> **Fork 说明**: 本项目 Fork 自 [wangwangit/SubsTracker](https://github.com/wangwangit/SubsTracker)，感谢原作者的优秀工作！
+
 基于Cloudflare Workers的轻量级订阅管理系统，帮助您轻松跟踪各类订阅服务的到期时间，并通过 Telegram、Webhook 等多渠道发送及时提醒。
 
 ![image](https://github.com/user-attachments/assets/22ff1592-7836-4f73-aa13-24e9d43d7064)
@@ -36,7 +38,7 @@
 
 ### 点击按钮，一键部署到 CloudFlare Workers,
 
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/wangwangit/SubsTracker)
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/Eric86777/SubsTracker)
 
 
 > 适用于新部署的,以前部署过的直接替换js中的内容即可!
@@ -45,7 +47,6 @@
 
 ### 1️⃣ 一键部署
 Fork仓库,然后点击自己仓库里的部署按钮，等待部署完成,**注意,KV名称修改为 `SUBSCRIPTIONS_KV`**
-![image.png](https://img.wangwangit.com/file/1751942578108_image.png)
 
 ### 2️⃣ 首次登录
 - 访问部署后的域名
@@ -101,9 +102,7 @@ Fork仓库,然后点击自己仓库里的部署按钮，等待部署完成,**注
 > 💡 **提示**: 系统默认每天早上8点自动检查即将到期的订阅
 
 
-**欢迎大家关注我的公众号**
 
-![39d8d5a902fa1eee6cbbbc8a0dcff4b](https://github.com/user-attachments/assets/96bae085-4299-4377-9958-9a3a11294efc)
 
 
 
@@ -147,12 +146,7 @@ Fork仓库,然后点击自己仓库里的部署按钮，等待部署完成,**注
 ![image](https://github.com/user-attachments/assets/af530379-332c-4482-9e6e-229a9e24775e)
 
 
-## 赞助
-本项目 CDN 加速及安全防护由 Tencent EdgeOne 赞助：EdgeOne 提供长期有效的免费套餐，包含不限量的流量和请求，覆盖中国大陆节点，且无任何超额收费，感兴趣的朋友可以点击下面的链接领取
 
-[[Best Asian CDN, Edge, and Secure Solutions - Tencent EdgeOne](https://edgeone.ai/?from=github)]
-
-[![image](https://edgeone.ai/media/34fe3a45-492d-4ea4-ae5d-ea1087ca7b4b.png)](https://edgeone.ai/media/34fe3a45-492d-4ea4-ae5d-ea1087ca7b4b.png)
 
 ## 🤝 贡献
 
@@ -164,4 +158,4 @@ MIT License
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=wangwangit/SubsTracker&type=Date)](https://www.star-history.com/#wangwangit/SubsTracker&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=Eric86777/SubsTracker&type=Date)](https://www.star-history.com/#Eric86777/SubsTracker&Date)
