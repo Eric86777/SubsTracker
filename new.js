@@ -2765,24 +2765,24 @@ const lunarBiz = {
 		const lunar = lunarCalendar.solar2lunar(start.getFullYear(), start.getMonth() + 1, start.getDate());
 		let nextLunar = addLunarPeriod(lunar, periodValue, periodUnit);
 		const solar = lunar2solar(nextLunar);
-		
-		// 使用与公历相同的方式创建日期  
-		const expiry = new Date(startDate); // 从原始日期开始  
-		expiry.setFullYear(solar.year);  
-		expiry.setMonth(solar.month - 1);  
-		expiry.setDate(solar.day);  
+
+		// 使用与公历相同的方式创建日期
+		const expiry = new Date(startDate); // 从原始日期开始
+		expiry.setFullYear(solar.year);
+		expiry.setMonth(solar.month - 1);
+		expiry.setDate(solar.day);
 		document.getElementById('expiryDate').value = expiry.toISOString().split('T')[0];
 		console.log('start:', start);
 		console.log('nextLunar:', nextLunar);
 		console.log('expiry:', expiry);
 		console.log('expiryDate:', document.getElementById('expiryDate').value);
-		
-		console.log('solar from lunar2solar:', solar);  
+
+		console.log('solar from lunar2solar:', solar);
 		console.log('solar.year:', solar.year, 'solar.month:', solar.month, 'solar.day:', solar.day);
-		console.log('expiry.getTime():', expiry.getTime());  
+		console.log('expiry.getTime():', expiry.getTime());
 		console.log('expiry.toString():', expiry.toString());
-		
-		
+
+
 	  } else {
 		// 公历推算
 		const start = new Date(startDate);
@@ -2798,6 +2798,14 @@ const lunarBiz = {
 		console.log('start:', start);
 		console.log('expiry:', expiry);
 		console.log('expiryDate:', document.getElementById('expiryDate').value);
+	  }
+
+	  // 手动同步日期选择器状态（不显示警告）
+	  if (window.startDatePicker && typeof window.startDatePicker.syncFromInputValue === 'function') {
+		window.startDatePicker.syncFromInputValue(false);
+	  }
+	  if (window.expiryDatePicker && typeof window.expiryDatePicker.syncFromInputValue === 'function') {
+		window.expiryDatePicker.syncFromInputValue(false);
 	  }
 
 	  // 更新农历显示
